@@ -1,0 +1,36 @@
+@import './../../../../assets/styles/colors';
+
+#header{
+    border-bottom: 7px solid #666;
+    background-color: #111;
+}
+.wrapper{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    background:#111 !important;
+}
+.img-logo{
+  width: 107px; 
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li {
+    
+    font-weight: 700;
+    
+}
+.nav ul li a{
+    color: aliceblue;
+}
+ .admin-link a{
+   color: red !important;
+   position: absolute;
+   right: 5%;
+}
+.admin-link1 a{
+    color: red !important;
+    position: absolute;
+    right: 12%;
+ }
