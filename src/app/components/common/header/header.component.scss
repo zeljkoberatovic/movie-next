@@ -1,36 +1,44 @@
 @import './../../../../assets/styles/colors';
 
-#header{
-    border-bottom: 7px solid #666;
-    background-color: #111;
+nav {
+    height: 75px;
+    background: rgba(0, 0, 0, 0.971) !important;
+    border-bottom: 5px solid white;
 }
-.wrapper{
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    background:#111 !important;
+nav i {
+    font-size: 40px;
 }
-.img-logo{
-  width: 107px; 
+nav img {
+    height: 75px;
 }
-.nav ul{
-    display: flex;
-}
-.nav ul li {
-    
-    font-weight: 700;
-    
-}
-.nav ul li a{
+nav ul a{
+    font-size: 1.3rem;
+    height: 75px;
+    font-weight: 600;
     color: aliceblue;
 }
- .admin-link a{
-   color: red !important;
-   position: absolute;
-   right: 5%;
+nav button {
+    margin-bottom: 20px;
 }
-.admin-link1 a{
+nav .admin-link a{
+   margin-left: 30px;
+    font-weight: 400;
+    color: red;
+}
+nav .admin-link1 a{
+    font-weight: 400;
+    color: red;
+}
+nav ul a i {
+    font-size: 20px;
+}
+ .sidenav {
+    height: 50%;
+    opacity: 0.9;
+}
+.sidenav .admin-link a {
     color: red !important;
-    position: absolute;
-    right: 12%;
- }
+}
+.sidenav .admin-link1 a {
+    color: red !important;
+}

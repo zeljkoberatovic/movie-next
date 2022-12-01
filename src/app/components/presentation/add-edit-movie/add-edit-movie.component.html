@@ -1,0 +1,66 @@
+
+<h2>Insert movie</h2>
+<div class="movie-add">
+
+   <div class="input-field col s6">
+      <input id="title" type="text" class="validate" [(ngModel)]="movie.title">
+       <label for="title">Title</label>
+   </div>
+
+   <div class="input-field col s6">
+    <input id="year" type="text" class="validate" [(ngModel)]="movie.year">
+     <label for="year">Year</label>
+ </div>
+
+ <!--<div class="input-field col s6">
+    <input id="image_url" type="text" class="validate" [(ngModel)]="movie.image_url">
+   <label for="image_url">Image-url</label>
+ </div>-->
+ <div class="input-field col s6">
+   <input id="runtime" type="text" class="validate" [(ngModel)]="movie.runtime">
+    <label for="runtime">Runtime</label>
+</div>
+
+<div class="input-field col s12">
+   <textarea id="description" class="materialize-textarea" [(ngModel)]="movie.description"></textarea>
+   <label for="description">Description</label>
+ </div>
+
+ <div><!--file-upload-->
+   <label for="image_url">Image-url</label>
+   <input type="file" class="file-input"
+   (change)="onFileSelected($event)" #fileUpload>
+
+ </div>
+
+ <div class="input-field col s6">
+    <input id="certificate" type="text" class="validate"[(ngModel)]="movie.certificate">
+     <label for="certificate">Certificate</label>
+ </div>
+
+ <div class="input-field col s6">
+    <input id="imdb_rating" type="text" class="validate" [(ngModel)]="movie.imdb_rating">
+     <label for="imdb_rating">Imdb_rating</label>
+ </div>
+  
+ <div class="input-field col s6">
+    <input id="metascore" type="text" class="validate" [(ngModel)]="movie.metascore">
+     <label for="metascore">Metascore</label>
+ </div>
+
+ <div class="input-field col s6">
+    <input id="votes" type="text" class="validate" [(ngModel)]="movie.votes">
+     <label for="votes">Votes</label>
+ </div>
+
+ <div class="input-field col s6">
+    <input id="gross" type="text" class="validate" [(ngModel)]="movie.gross">
+     <label for="gross">Gross</label>
+ </div>
+       
+
+ <button (click)="saveMovie()" class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+        
+ </div><!--and class "movie-add"-->

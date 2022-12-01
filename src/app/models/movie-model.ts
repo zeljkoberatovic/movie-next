@@ -10,4 +10,5 @@ export class Movie {
     metascore: number;
     votes: number;
     gross: number;
+  imagePath: any;
 }

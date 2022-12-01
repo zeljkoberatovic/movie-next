@@ -1,18 +1,25 @@
-<header id="header">
-    <div class="wrapper">
-        <div class="img-logo">
-         <img src="'./../../../../../assets/images/logo2.png" alt="logo">
-           </div>
-        <nav class="nav">
-          <ul>
-            <li><a routerLink='/home'>HOME</a></li>
-            <li><a routerLink='/movies'>MOVIE</a></li>
-            <li><a routerLink='/directors'>DIrectors</a></li>
-            <li><a routerLink='/stars'>STARS</a></li>
-            <li class="admin-link"><a routerLink="">Sign in</a></li>
-            <li class="admin-link1"><a routerLink="">Register</a></li>
-            <button class="btn btn-success pull-right" ><a routerLink="/Service/Sign_in"> Sign in</a></button>
-          </ul>
-        </nav>
-    </div>
-</header>
+
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo"><img src="'./../../../../../assets/images/logo2.png" alt="logo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+         <ul class="right hide-on-med-and-down">
+            <li *ngIf="isAuthenticated"><a routerLink='/movies'>MOVIE</a></li>
+              <li *ngIf="isAuthenticated"><a routerLink='/directors'>DIRECTORS</a></li>
+               <li *ngIf="isAuthenticated"><a routerLink='/stars'>STARS</a></li>
+                <li *ngIf="isAuthenticated"><a routerLink='/add-movie'><i class="material-icons">add</i>Add</a></li>
+                 <li class="admin-link1" *ngIf="!isAuthenticated"><a routerLink="/login">Login</a></li>
+                  <li class="admin-link1" *ngIf="!isAuthenticated"><a routerLink="/register">Register</a></li>
+                  <li class="admin-link1" *ngIf="isAuthenticated"><a (click)="logout()">Log out</a></li>
+        </ul>
+  </div>
+</nav>
+<ul class="sidenav" id="mobile-demo">
+  <li *ngIf="isAuthenticated"><a routerLink='/movies'>MOVIE</a></li>
+  <li *ngIf="isAuthenticated"><a routerLink='/directors'>DIRECTORS</a></li>
+   <li *ngIf="isAuthenticated"><a routerLink='/stars'>STARS</a></li>
+     <li class="admin-link1" *ngIf="!isAuthenticated"><a routerLink="/login">Login</a></li>
+      <li class="admin-link1" *ngIf="!isAuthenticated"><a routerLink="/register">Register</a></li>
+      <li class="admin-link1" *ngIf="isAuthenticated"><a (click)="logout()">Log out</a></li>
+</ul>
+

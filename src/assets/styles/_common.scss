@@ -29,3 +29,10 @@ h5{font-size: 15px;}
 li { list-style: none; }
 
 a { text-decoration: none; }
+
+i.material-icons {
+    display: inline-block !important;
+}
+body.active{
+    overflow: hidden;
+}

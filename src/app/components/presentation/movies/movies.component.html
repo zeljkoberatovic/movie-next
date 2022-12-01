@@ -1,1 +1,23 @@
-<h1>Listen to movies</h1>
+<div id="movies">
+<h1>List of movies
+<ul class="right hide-on-med-and-down">
+   <li><a routerLink='/stars'>STARS</a></li>
+    <li><a routerLink='/directors'>DIRECTORS</a></li>
+    </ul></h1>
+
+<div class="row">
+    <app-movie-list-item *ngFor="let m of movies" [movie]="m"></app-movie-list-item>
+</div>
+
+<ul class="pagination">
+  <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+  <li class="active"><a href="#!">1</a></li>
+  <li class="waves-effect"><a href="#!">2</a></li>
+  <li class="waves-effect"><a href="#!">3</a></li>
+  <li class="waves-effect"><a href="#!">4</a></li>
+  <li class="waves-effect"><a href="#!">5</a></li>
+  <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+</ul>
+
+
+  

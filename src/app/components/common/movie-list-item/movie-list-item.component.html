@@ -1,1 +1,17 @@
-<p>movie-list-item works!</p>
+<div class="col s12 m3" >
+  <div class="card">
+    <div class="card-image">
+      <img src="{{apiUrl}}/{{movie.image_url}}">
+      <span class="">{{ movie.title }}</span>
+    </div>
+    <div class="card-content">
+      <p><i class="material-icons">event_note</i> {{ movie.year }}</p>
+    </div>
+    <div class="card-action">
+         <a  class="waves-effect waves-light btn-large" routerLink="/view-movie/{{movie.id}}">View</a>
+           <a *ngIf="isAdmin" class="waves-effect waves-light btn-large"  routerLink="/edit-movie/{{movie.id}}">Edit</a>
+             <a *ngIf="isAdmin" class="waves-effect waves-light btn-large" (click)="deleteMovie()">Delete</a>
+    </div>
+</div>
+
+
