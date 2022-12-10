@@ -10,8 +10,11 @@ import { MovieService } from 'src/app/services/movie.service';
 })
 export class MoviesComponent implements OnInit {
   
-  showDiv: boolean = true;
+  searchText :string;
+  //showDiv: boolean = true;
   movies: Movie[] = [];
+  
+ 
 
   constructor(private movieService: MovieService) { }  //sad smo movieService indzektovali unutar ove komponente
 
@@ -22,5 +25,4 @@ export class MoviesComponent implements OnInit {
     });
   }
   
-
 }

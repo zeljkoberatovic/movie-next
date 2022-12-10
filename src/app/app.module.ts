@@ -17,7 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { ViewMovieComponent } from './components/presentation/view-movie/view-movie.component';
 import { LoginComponent } from './components/presentation/login/login.component';
 import { RegisterComponent } from './components/presentation/register/register.component';
-import { GuardsCheckStart } from '@angular/router';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 // niz ruta-svaka ruta je JSON objekat
@@ -41,7 +41,8 @@ import { GuardsCheckStart } from '@angular/router';
     BrowserModule,  // osnovna brovser pravila
     AppRoutingModule, //model za rutiranje,njega na pocetku ukljucujemo
     HttpClientModule,  // za upucivanje poziva(ajax) njega moramo sami da unesemo(rucno)
-    FormsModule //t-w-b kad koristimo
+    FormsModule, //t-w-b kad koristimo
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

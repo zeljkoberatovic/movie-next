@@ -3,5 +3,42 @@ img{
 }
 figure{
     margin: 0;
+    z-index: 1;
 }
-
+.btn-text{
+    z-index: 3;
+}
+.hero{
+    border-top: 7px solid #666;
+    background-color: #111;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+h2, p{
+    color: white;
+    margin: 30px;
+}
+p{
+    font-size: 20px;
+}
+.img-text{
+    margin: 0 0 50px 30px;
+}
+.hero-2{
+    border-top: 7px solid #666;
+    background-color: #111;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+.text-hero{
+    margin: 30px;
+}
+.img-hero{
+    border: 2px solid grey;
+}

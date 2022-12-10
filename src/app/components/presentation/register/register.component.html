@@ -1,4 +1,4 @@
-<div>
+<div class="register-form-1">
     <h2>Register</h2>
     <div class="register-form">
 
@@ -7,14 +7,13 @@
             <label for="username">Username</label>
         </div>
         <div class="input-field col s6">
-            <input id="name" type="text" [(ngModel)]="user.name">
-            <label for="name">Name</label>
-        </div>
-        <div class="input-field col s6">
-            <input id="password" type="text" [(ngModel)]="user.password">
+            <input id="password" type="password" [(ngModel)]="user.password">
             <label for="password">Password</label>
         </div>
-       
+        <div class="input-field col s6">
+            <input id="password" type="password" [(ngModel)]="user.repeat_password">
+            <label for="password">Repeat Password</label>
+        </div>
         <button (click)="register()" class="btn waves-effect waves-light">Register</button>
     </div>
 </div>

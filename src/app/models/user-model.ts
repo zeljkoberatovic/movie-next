@@ -3,5 +3,6 @@ export class User{
     name: string;
     is_admin: boolean;
     password: string;
+    repeat_password:string;
     
 }

@@ -1,0 +1,34 @@
+.register-form-1{
+    background-image: url("./../../../../assets/images/cool-hexagon-pattern-i5xcesse182q4e54.jpg");
+    border-radius: 3px 3px 0 0 ;
+    margin: 8% auto;
+    width: 35%;
+}
+h2{
+    text-align:center;
+    padding: 4px;
+    color:aliceblue;
+    font-size: 28px;
+}
+.register-form{
+    padding: 10px;
+}
+#password{
+    color: aliceblue;
+}
+#username{
+    color: aliceblue;
+}
+div.input-field:nth-child(1) > label:nth-child(2){
+    color:aliceblue;
+}
+.btn{
+    background: black;
+    color: aliceblue;
+}
+div.input-field:nth-child(2) > label:nth-child(2){
+    color: aliceblue;
+}
+div.input-field:nth-child(3) > label:nth-child(2){
+    color: aliceblue;
+}

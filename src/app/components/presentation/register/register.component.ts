@@ -20,7 +20,8 @@ export class RegisterComponent implements OnInit {
   }
   register(){
     if(!this.user.username ||
-      !this.user.password){
+      !this.user.password ||
+      !this.user.repeat_password){
         M.toast({html: 'Insert all data'});
         return;
       }
