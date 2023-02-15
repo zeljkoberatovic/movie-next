@@ -20,8 +20,7 @@ export class MovieListItemComponent implements OnInit {
   apiUrl = `${environment.apiUrl}`;
   isAdmin = this.auth.isAdmin();
 
-  //piUrl = environment.apiUrl;
-  //moviesComponent: any;
+  
   
   constructor(private movieService: MovieService,
     @Host() private moviesComponent: MoviesComponent,
